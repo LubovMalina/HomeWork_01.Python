@@ -4,10 +4,11 @@
 (выработка в часах*ставка в час) + премия. Для выполнения расчета для
 конкретных значений необходимо запускать скрипт с параметрами.
 '''
-
+import sys
 from sys import argv
 
-script_name, employee_name, hours, hourly_rate, bonus = argv
+script_name, employee_name, hours, hourly_rate, bonus = sys.argv
+
 # передаются аргументы: имя файла, ФИО сотрудника, отработанные часы в месяц, часовая ставка,
 # премия в виде процентов числом от 0 до 100
 
